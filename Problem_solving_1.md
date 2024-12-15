@@ -143,13 +143,19 @@ $\frac{10^{18}}{10^8}$  -->  $10^{18 - 8}$  ---> $10^{10}$  --> $10^{10}$ sec  -
 
 ```java
 
-use factors function(code) to check the prime number or not.
+
+// Use Factors function(code) to check the prime number or not.
  
 function checkPrime(int N) {
+
     //If a number has exactly two factors, it is considered a prime number; otherwise, it is not a prime.....
+
     if(count_factors(N) == 2){
+
         return true;
-    }else{
+
+    } else {
+
         return false;
     }
 }
