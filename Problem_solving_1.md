@@ -90,7 +90,7 @@ $\frac{10^8}{10^8}$  -->  $10^{8 - 8}$  ---> $10^0$  --> 1 sec
 
 $\frac{10^9}{10^8}$  -->  $10^{9 - 8}$  ---> $10^1$  --> 10 sec
 
-$\frac{10^{18}}{10^8}$  -->  $10^{18 - 8}$  ---> $10^{10}$  --> $10^{10}$ sec
+$\frac{10^{18}}{10^8}$  -->  $10^{18 - 8}$  ---> $10^{10}$  --> $10^{10}$ sec  -> To see the output, you would need to wait for 317 years. If you run the code, it will take multiple generations—your 5th or 6th generation may be the ones to actually see the result. This highlights the need for optimizing the code.
 
 
 
