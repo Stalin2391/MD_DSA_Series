@@ -45,3 +45,28 @@ function count_factors( int N ){
 
     return freq_count;
 }
+
+### Optimized Approach:
+
+_TC_ : O(sqrt(N))  
+_SC_ : O(1)
+
+```java
+// Optimized approach to count factors of N
+function count_factors(int N) {
+    int freq_count = 0;
+
+    // Loop until the square root of N
+    for (int i = 1; i * i <= N; i++) {
+        if (N % i == 0) { // Check if i divides N
+            if (N / i == i) {
+                freq_count++; // If i is the square root of N, count only once
+            } else {
+                freq_count += 2; // Count both i and N/i as factors
+            }
+        }
+    }
+
+    return freq_count;
+}
+
