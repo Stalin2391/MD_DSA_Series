@@ -23,67 +23,25 @@
 
     - Maximum Factor of N is N => ( Number itself).
 
-```markdown
 ## Code 💻
-
 
 ### Brute force Approach:
 
-_TC_ : O(N)
+_TC_ : O(N)  
 _SC_ : O(1)
 
-    ```java
-    function count_factors( int N ){
- 
-        int freq_count = 0;
+```java
+function count_factors( int N ){
 
-        for(int i = 1; i <= N; i++){
+    int freq_count = 0;
 
-            if( N % i == 0 ){
+    for(int i = 1; i <= N; i++){
 
-                freq_count++;
-            }
+        if( N % i == 0 ){
+
+            freq_count++;
         }
-
-        return freq_count;
     }
 
-
-### Optimized approach:
-
-
-_TC_ : O( square root of N )
-_SC_ : O(1)
-
-    ```java
-    function count_factors( int N ){
- 
-        int freq_count = 0;
-
-        for(int i = 1; i <= N; i++){
-
-            if( N % i == 0 ){
-
-                if( N / i == i){
-                    count++;
-                }else {
-                    count += 2;
-                }
-            }
-        }
-
-        return freq_count;
-    }
-
-<!-- 
-    i        N / i 
-    1        24 / 1 = 24
-    2        24 / 2 = 12
-    3        24 / 3 =  8
-    4        24 / 4 =  6
-    6        24 / 6 =  4
-    8        24 / 8 =  3
-    12       24 / 12 = 2
-    24       24 / 24 = 1
--->
-
+    return freq_count;
+}
