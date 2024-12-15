@@ -68,6 +68,24 @@ function count_factors(int N) {
     return freq_count;
 }
 ```
+```java
+
+// PART A
+// i        N / i 
+// 1        24 / 1 = 24
+// 2        24 / 2 = 12
+// 3        24 / 3 =  8
+// 4        24 / 4 =  6
+---------------------------------------- We Don't need to iterate all values, just iterate the PART A 
+// PART B
+// 6        24 / 6 =  4
+// 8        24 / 8 =  3
+// 12       24 / 12 = 2
+// 24       24 / 24 = 1
+```
+
+
+
 # Iteration - Standard Way
 
 $10^8$ iterations -------> 1 sec.
