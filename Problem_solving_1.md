@@ -68,6 +68,8 @@ function count_factors(int N) {
     return freq_count;
 }
 ```
+### DRY RUN:
+
 ```java
 
 // PART A
@@ -84,6 +86,21 @@ function count_factors(int N) {
 // 24       24 / 24 = 1
 ```
 
+```
+// i        N / i  
+// 1        36
+// 2        18
+// 3        12
+// 4         9
+// 6         6  --> Edge case in this case you need to increase your count by 1 else incease count by 2.
+
+if(N / i == i){
+    count++;
+}else {
+    count += 2;
+}
+
+```
 
 
 # Iteration - Standard Way
