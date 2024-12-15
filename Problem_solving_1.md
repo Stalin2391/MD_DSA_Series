@@ -82,11 +82,11 @@ $10^8$ iterations -------> 1 sec.
 
 ### Formula
 
-$\frac{a^n}{a^m}$$
+$\frac{a^n}{a^m}$
 
 $a^{n - m}$
 
-$\frac{10^8}{10^8}$$   => 1 sec
+$\frac{10^8}{10^8}$   => 1 sec
 
 
 
