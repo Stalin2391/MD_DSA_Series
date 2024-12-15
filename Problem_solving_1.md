@@ -45,7 +45,7 @@ function count_factors( int N ){
 
     return freq_count;
 }
-
+```
 ### Optimized Approach:
 
 _TC_ : O(sqrt(N))  
