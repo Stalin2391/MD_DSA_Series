@@ -67,4 +67,18 @@ function count_factors(int N) {
 
     return freq_count;
 }
+```
+# Iteration - Standard Way
+
+$$
+10^8 iterations -------> 1 sec.
+$$
+
+
+
+
+
+
+
+
 
