@@ -86,7 +86,7 @@ function count_factors(int N) {
 // 24       24 / 24 = 1
 ```
 
-```
+```java
 // i        N / i  
 // 1        36
 // 2        18
