@@ -70,16 +70,23 @@ function count_factors(int N) {
 ```
 # Iteration - Standard Way
 
-$$
-10^8 iterations -------> 1 sec.
-$$
+$10^8$ iterations -------> 1 sec.
+
 
 | N        | Iteration | Execution Time |
 |----------|-----------|----------------|
 | $10^8$   | $10^8$    | 1 sec          |
 | $10^9$   | $10^9$    | 10 sec         |
-| $10^18$  | $10^18$   | $10^10$ sec    |
+| $10^{18}$| $10^18$   | $10^{18}$ sec  |
 
+
+### Formula
+
+     ```
+        => $a^n$/$a^m$
+        => $a^n-m$
+
+     ```
 
 
 
