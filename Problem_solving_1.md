@@ -13,6 +13,7 @@
     Given N, return number of factors of N. 
 
 ### 💬 Answer:
+
     -> Example : 
 
     ❓ Q1: Number of factors of 24 => [ 1, 2, 3, 4, 6, 8, 12, 24] => Total number of Factors is 8.
@@ -127,6 +128,33 @@ $\frac{10^9}{10^8}$  -->  $10^{9 - 8}$  ---> $10^1$  --> 10 sec
 
 $\frac{10^{18}}{10^8}$  -->  $10^{18 - 8}$  ---> $10^{10}$  --> $10^{10}$ sec  -> To see the output, you would need to wait for 317 years. If you run the code, it will take multiple generations—your 5th or 6th generation may be the ones to actually see the result. This highlights the need for optimizing the code.
 
+
+#Prime Numbers
+
+### ❓Question:
+    Given N, Check the if N is Prime or Not.
+
+### 💬 Answer:
+
+    -> Example : 
+
+    ❓ Q1: How many Prime Numbers are there?  => 10, 11, 23, 2, 25, 27, 31 => Total 4 Prime Numbers.
+
+
+```java
+
+use factors function(code) to check the prime number or not.
+ 
+function checkPrime(int N) {
+    //If a number has exactly two factors, it is considered a prime number; otherwise, it is not a prime.....
+    if(count_factors(N) == 2){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+```
 
 
 
