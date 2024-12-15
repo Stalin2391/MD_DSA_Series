@@ -82,11 +82,14 @@ $10^8$ iterations -------> 1 sec.
 
 ### Formula
 
-     ```
-        => $a^n$/$a^m$
-        => $a^n-m$
+$$
+\frac{a^n}{a^m}
+$$
 
-     ```
+$$
+a^{n - m}
+$$
+
 
 
 
