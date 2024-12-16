@@ -186,6 +186,25 @@ public static boolean checkPrime(int N) {
 
     (a, b] : a & b are both excluded.  -----> b - a  <--------- [a, b) are the both same 
 
+❓ **Q3: Geometric Progression(GP)**
+
+    5 10 20 40 80 ....................  
+
+    first value = a
+    a = 5
+    common ratio is r
+    r = 2  ---> ex: 5 * 2 = 10, 10 * 2 = 20, 20 * 2 = 40 so common ratio is 2 in this example
+    
+**GP Notation:**
+        a, ar, $ar^2$, $ar^3$, $ar^4$........
+        
+**Sum of first N terms in GP :**
+
+  \[
+S_n = a \frac{1 - r^n}{1 - r} \quad \text{if } r \neq 1
+\]
+
+
 
 
 
