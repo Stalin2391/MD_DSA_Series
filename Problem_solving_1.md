@@ -200,9 +200,9 @@ public static boolean checkPrime(int N) {
         
 **Sum of first N terms in GP :**
 
-  \[
-S_n = a \frac{1 - r^n}{1 - r} \quad \text{if } r \neq 1
-\]
+          \[
+        S_n = a \frac{1 - r^n}{1 - r} \quad \text{if } r \neq 1
+        \]
 
 
 
