@@ -199,7 +199,11 @@ public static boolean checkPrime(int N) {
         a, ar, $ar^2$, $ar^3$, $ar^4$........
         
 **Sum of first N terms in GP :**
-    $\frac(a({r^n - 1}){r - 1}$
+
+   \[
+\frac{a(r^n - 1)}{r - 1}
+\]
+
 
 
 
