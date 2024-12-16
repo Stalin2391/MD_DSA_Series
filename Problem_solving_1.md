@@ -199,12 +199,7 @@ public static boolean checkPrime(int N) {
         a, ar, $ar^2$, $ar^3$, $ar^4$........
         
 **Sum of first N terms in GP :**
-    ```
-          \[
-        S_n = a \frac{1 - r^n}{1 - r} \quad \text{if } r \neq 1
-        \]
-    ```
-
+    $\frac(a({r^n - 1}){r - 1}$
 
 
 
