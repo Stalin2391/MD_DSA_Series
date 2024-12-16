@@ -176,7 +176,6 @@ public static boolean checkPrime(int N) {
 
     100(100 + 1) / 2 ---> 50 * 101 = 5050
 
-
 # Derivation of the Formula for the Sum of N Natural Numbers
 
 The formula for the sum of the first **N natural numbers** is:  
@@ -265,7 +264,6 @@ Using the formula:
 \]
 
 This matches the manually calculated result.
-
 
 
 
