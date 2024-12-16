@@ -1,9 +1,8 @@
-# Content
+# Agenda
 
 ### Factors
 ### Prime Numbers
 ### Basic Math Revision
-### Number of Iteration
 
 
 # Factors
