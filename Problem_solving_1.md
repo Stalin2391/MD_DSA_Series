@@ -32,7 +32,7 @@ _TC_ : O(N)
 _SC_ : O(1)
 
 ```java
-function count_factors( int N ){
+public static int count_factors( int N ){
 
     int freq_count = 0;
 
@@ -53,7 +53,7 @@ _TC_ : O(sqrt(N))
 _SC_ : O(1)
 
 ```java
-function count_factors(int N) {
+public static int count_factors(int N) {
     int freq_count = 0;
 
     for (int i = 1; i * i <= N; i++) {
@@ -146,7 +146,7 @@ $\frac{10^{18}}{10^8}$  -->  $10^{18 - 8}$  ---> $10^{10}$  --> $10^{10}$ sec  -
 
 // Use Factors function(code) to check the prime number or not.
  
-function checkPrime(int N) {
+public static boolean checkPrime(int N) {
 
     //If a number has exactly two factors, it is considered a prime number; otherwise, it is not a prime.....
 
