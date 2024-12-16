@@ -200,7 +200,9 @@ public static boolean checkPrime(int N) {
         
 **Sum of first N terms in GP :**
 
-$$\frac{a(r^n - 1)}{r - 1}$$
+$\frac{a(r^n - 1)}{r - 1}$     ---> for r != 1
+
+if r = 1, sum = a * n
 
 
 
