@@ -162,7 +162,16 @@ public static boolean checkPrime(int N) {
 
 ```
 
+# Basic Math Revision
 
+     ❓ Q1: Sum of N Natural Numbers
+        ex: 1, 2, 3, 4, 5, 6, 7, 8............100.
+        
+        ### Formula
+            N(N + 1) / 2
+            ex:
+                100(100 + 1) / 2 ---> 50 * 101 = 5050
+        
 
 
 
