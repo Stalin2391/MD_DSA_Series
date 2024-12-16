@@ -176,6 +176,16 @@ public static boolean checkPrime(int N) {
 
     100(100 + 1) / 2 ---> 50 * 101 = 5050
 
+❓ **Q2: Some basic Maths properties**
+
+    ### Formula
+    
+    [a, b] : a & b are both inclusive. ----> b - a + 1
+    
+    (a, b) : a & b are both excluded.  -----> b - a - 1
+
+    (a, b] : a & b are both excluded.  -----> b - a  <--------- [a, b) are the both same 
+
 
 
 
