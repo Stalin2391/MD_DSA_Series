@@ -1,3 +1,3 @@
 # Agenda
 
-## Prefix sum
+### Prefix Sum
