@@ -93,3 +93,43 @@ public static void rangeSum(int[] arr, int[][] query){
 }
 
 ```
+
+## Optimized Approach of Range Sum Queries:
+
+- **TC**: `O(N)`
+- **SC**: `O(N)`  - Because of the Prefix Sum, we can further optimize the space by using in-place techniques.
+
+```
+int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
+int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
+rangeSum(arr, query);
+```
+
+```
+ public static void rangeSum(int[] arr, int[][] query, int N){    
+
+    int Q = query.length;
+    int N = arr.length;
+    int[] prefixSum = new int[N];
+
+    prefixSum[0] = arr[0];
+
+    for(int i = 1; i < N; i++){
+      prefixSum[i] = prefixSum[i - 1] + arr[i];
+    }
+    
+    for(int i = 0; i < Q; i++){
+        int L = query[i][0],  R = query[i][1];
+        int sum = 0;
+
+        if(L == 0){
+          sum += prefixSum[R];
+        }else {
+          sum += prefixSum[R] - prefixSum[L - 1];
+        }
+       
+      System.out.print(sum + " ");
+    }
+  }
+```
+
