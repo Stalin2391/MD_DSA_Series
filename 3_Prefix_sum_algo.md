@@ -70,6 +70,9 @@ if(l == 0){
 ```
 ## Brute Force Approach of Range Sum Queries:
 
+_TC_ : O({N^2})  
+_SC_ : O(1)
+
 ```
 int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
 int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
