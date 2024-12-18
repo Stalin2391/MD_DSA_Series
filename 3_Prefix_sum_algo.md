@@ -106,7 +106,7 @@ rangeSum(arr, query);
 ```
 
 ```
- public static void rangeSum(int[] arr, int[][] query, int N){    
+ public static void rangeSum(int[] arr, int[][] query){    
 
     int Q = query.length;
     int N = arr.length;
