@@ -133,3 +133,53 @@ rangeSum(arr, query);
   }
 ```
 
+#### In-place Technique of Prefix Sum:
+
+- **TC**: `O(N)`
+- **SC**: `O(1)`
+
+  
+```
+int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
+int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
+rangeSum(arr, query);
+```
+
+```
+ public static void rangeSum(int[] arr, int[][] query){    
+
+    int Q = query.length;
+    int N = arr.length;
+
+    for(int i = 1; i < N; i++){
+      arr[i] = arr[i - 1] + arr[i];
+    }
+    
+    for(int i = 0; i < Q; i++){
+        int L = query[i][0],  R = query[i][1];
+        int sum = 0;
+
+        if(L == 0){
+          sum += arr[R];
+        }else {
+          sum += arr[R] - arr[L - 1];
+        }
+       
+      System.out.print(sum + " ");
+    }
+  }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
