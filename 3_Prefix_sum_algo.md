@@ -81,8 +81,7 @@ rangeSum(arr, query);
 ```
 public static void rangeSum(int[] arr, int[][] query){    
     int Q = query.length;
-    int N = arr.length;
-    
+
     for(int i = 0; i < Q; i++){
         int L = query[i][0],  R = query[i][1];
         int sum = 0;
