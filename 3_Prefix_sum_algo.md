@@ -28,11 +28,14 @@ prefixSum[2] = prefixSum[1] + arr[2] = 3 + 3 = 6
 prefixSum[3] = prefixSum[2] + arr[3] = 6 + 4 = 10
 prefixSum[4] = prefixSum[3] + arr[4] = 10 + 5 = 15
 ```
+#### Prefix Sum Formula
+```
+prefixSum[i] = prefixSum[i-1] + arr[i]
+```
 So, the prefix sum array would look like this: If you want to find the sum of a particular range, you can easily calculate it.
 ```
 int[] prefixSum = [1, 3, 6, 10, 15]
 ```
-
 Let's say another example with Indian team score
 ```
 overs = 1   2   3   4   5   6   7   8   9  10
@@ -45,7 +48,7 @@ Given an array of size 10, to find the score of the Indian team for a particular
 5th over ---->  45 - 32 = 13 , so prefixSum[5] - prefixSum[4]
 4th over to 6th over -----> 56 - 22 = 34, prefixSum[6] - prefixSum[3]
 ```
-How to Use the Prefix Sum Array for Range Sum Queries:
+### How to Use the Prefix Sum Array for Range Sum Queries:
 Once we have the prefix sum array, we can quickly compute the sum of any subarray arr[l...r] (where l is the starting index and r is the ending index) using the following formula:
 So In general **Formula** is
 ```
