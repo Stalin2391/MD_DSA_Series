@@ -94,7 +94,7 @@ public static void rangeSum(int[] arr, int[][] query){
 
 ```
 
-## Optimized Approach of Range Sum Queries:
+## Optimized Approach for Range Sum Queries:
 
 - **TC**: `O(N)`
 - **SC**: `O(N)`  - Because of the Prefix Sum, we can further optimize the space by using in-place techniques.
