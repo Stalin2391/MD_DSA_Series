@@ -36,9 +36,9 @@ So, the prefix sum array would look like this: If you want to find the sum of a 
 ```
 int[] prefixSum = [1, 3, 6, 10, 15]
 ```
-Let's say another example with Indian team score
+Let's say we have the scores of the Indian cricket team for the first 10 overs in an array:
 ```
-overs = 1   2   3   4   5   6   7   8   9  10
+    overs =   1   2   3   4   5   6   7   8   9  10
 prefixSum = [ 4, 15, 22, 32, 45, 56, 67, 83, 88, 91 ]
 
 ```
@@ -55,3 +55,16 @@ So In general **Formula** is
 prefixSum[r] - prefixSum[l-1]
 ```
 
+### Edge Case:
+If you want to get the score from the 0th to the 5th over, you can simply look at the value at the 5th index in the prefix sum array.
+In this case you want find out the edge case
+```
+l = 0;
+r = 5;
+if(l == 0){
+   sum(l, r) = prefixSum[r]
+}else {
+    sum(l, r) = prefixSum[r] - prefixSum[l-1]
+}
+
+```
