@@ -70,8 +70,8 @@ if(l == 0){
 ```
 ## Brute Force Approach of Range Sum Queries:
 
-_TC_ : O({N^2})  
-_SC_ : O(1)
+- **TC**: `O(N^2)`
+- **SC**: `O(1)`
 
 ```
 int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
