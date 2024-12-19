@@ -145,7 +145,7 @@ int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
 rangeSum(arr, query);
 ```
 
-```
+```java
  public static void rangeSum(int[] arr, int[][] query){    
 
     int Q = query.length;
