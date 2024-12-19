@@ -178,6 +178,12 @@ rangeSum(arr, query);
 - **SC**: O(1)
 
 ```java
+int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
+int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
+evenIndicesRangeSum(arr, query);
+```
+
+```java
 public static void evenIndicesRangeSum(int[] arr, int[][] query){
     int Q = query.length;
     for(int i = 0; i < Q; i++){
@@ -191,3 +197,41 @@ public static void evenIndicesRangeSum(int[] arr, int[][] query){
         System.out.print(sum + " ");
     }
 }
+```
+
+### Optimized:
+
+- **TC**: $O(N + Q)$
+- **SC**: O(N)
+
+```java
+int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
+int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
+evenIndicesRangeSum(arr, query);
+```
+
+```java
+public static void evenIndicesRangeSum(int[] arr, int[][] query){
+    int Q = query.length;
+    int N = arr.length;
+    int[] prefixSum = new int[N];
+    prefixSum[0] = arr[0];
+    for(int i = 1; i < N; i++){
+        if(i % 2 == 0){
+            prefixSum[i] = prefixSum[i - 1] + arr[i];
+        }else {
+            prefixSum[i] = prefixSum[i - 1];
+        }    
+    }
+    for(int i = 0; i < Q; i++){
+        int L = query[i][0], R = query[i][1];
+        int sum = 0;
+        if(L == 0){
+            sum += prefixSum[R];
+        }else {
+            sum += prefixSum[R] - prefixSum[L - 1];
+        }
+        System.out.print(sum + " ");
+    }
+}
+```
