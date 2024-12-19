@@ -51,14 +51,14 @@ Given an array of size 10, to find the score of the Indian team for a particular
 ### How to Use the Prefix Sum Array for Range Sum Queries:
 Once we have the prefix sum array, we can quickly compute the sum of any subarray arr[l...r] (where l is the starting index and r is the ending index) using the following formula:
 So In general **Formula** is
-```
+```java
 prefixSum[r] - prefixSum[l-1]
 ```
 
 ### Edge Case:
 If you want to get the score from the 0th to the 5th over, you can simply look at the value at the 5th index in the prefix sum array.
 In this case you want find out the edge case
-```
+```java
 l = 0;
 r = 5;
 if(l == 0){
@@ -73,12 +73,12 @@ if(l == 0){
 - **TC**: $O(N^2)$
 - **SC**: O(1)
 
-```
+```java
 int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
 int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
 rangeSum(arr, query);
 ```
-```
+```java
 public static void rangeSum(int[] arr, int[][] query){    
     int Q = query.length;
 
@@ -99,13 +99,13 @@ public static void rangeSum(int[] arr, int[][] query){
 - **TC**: `O(N)`
 - **SC**: `O(N)`  - Because of the Prefix Sum, we can further optimize the space by using in-place techniques.
 
-```
+```java
 int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
 int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
 rangeSum(arr, query);
 ```
 
-```
+```java
  public static void rangeSum(int[] arr, int[][] query){    
 
     int Q = query.length;
@@ -139,7 +139,7 @@ rangeSum(arr, query);
 - **SC**: `O(1)`
 
   
-```
+```java
 int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
 int[][] query = { {0,3}, {2, 5}, {1, 4}, {3,6}, {0,7} };
 rangeSum(arr, query);
