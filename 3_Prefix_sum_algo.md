@@ -96,7 +96,7 @@ public static void rangeSum(int[] arr, int[][] query){
 
 ## Optimized Approach for Range Sum Queries:
 
-- **TC**: `O(N)`
+- **TC**: `O(N + Q)`
 - **SC**: `O(N)`  - Because of the Prefix Sum, we can further optimize the space by using in-place techniques.
 
 ```java
@@ -168,3 +168,35 @@ rangeSum(arr, query);
       System.out.print(sum + " ");
     }
   }
+```
+### Even Indices Range Sum Queries"
+
+
+## Brute Force:
+
+- **TC**: $O(N^2)$
+- **SC**: O(1)
+
+```java
+public static void evenIndicesRangeSum(int[] arr, int[][] query){
+    int Q = query.length;
+    for(int i = 0; i < Q; i++){
+        int L = query[i][0], R = query[i][1];
+        int sum = 0;
+        for(int j = L; j <= R; j++){
+            if(j % 2 == 0){
+                sum += arr[j];  
+            }
+        }
+        System.out.print(sum + " ");
+    }
+}
+ 
+
+
+
+
+
+
+
+
