@@ -172,6 +172,48 @@ rangeSum(arr, query);
 
 
 
+### Explanation:
+- The triple backticks (```` ``` ````) denote a **fenced code block**.
+- The `java` right after the opening backticks (` ```java `) specifies that this code block should be treated as Java code, enabling syntax highlighting for Java.
+  
+### 2. **Resulting Display (Colorful Code)**
+
+When rendered on platforms like **GitHub**, **GitLab**, or any Markdown editor that supports syntax highlighting, the code will appear with colors for different components, such as:
+- **Keywords** like `public`, `static`, `for`, `if`, etc.
+- **Variables** like `arr`, `query`, `Q`, `N`, `L`, `R`, `sum`.
+- **Methods** like `System.out.print`.
+
+### 3. **Example of the Code in a Markdown File**:
+
+```markdown
+### Java Code to Compute Range Sum
+
+```java
+public static void rangeSum(int[] arr, int[][] query) {    
+
+    int Q = query.length;
+    int N = arr.length;
+
+    for (int i = 1; i < N; i++) {
+        arr[i] = arr[i - 1] + arr[i];
+    }
+    
+    for (int i = 0; i < Q; i++) {
+        int L = query[i][0],  R = query[i][1];
+        int sum = 0;
+
+        if (L == 0) {
+            sum += arr[R];
+        } else {
+            sum += arr[R] - arr[L - 1];
+        }
+
+        System.out.print(sum + " ");
+    }
+}
+
+
+
 
 
 
