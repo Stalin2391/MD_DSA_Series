@@ -169,10 +169,10 @@ rangeSum(arr, query);
     }
   }
 ```
-### Even Indices Range Sum Queries:
+## Even Indices Range Sum Queries:
 
 
-## Brute Force:
+### Brute Force:
 
 - **TC**: $O(N^2)$
 - **SC**: O(1)
