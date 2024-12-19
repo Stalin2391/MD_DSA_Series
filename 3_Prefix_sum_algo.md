@@ -169,7 +169,7 @@ rangeSum(arr, query);
     }
   }
 ```
-### Even Indices Range Sum Queries"
+### Even Indices Range Sum Queries:
 
 
 ## Brute Force:
@@ -191,12 +191,3 @@ public static void evenIndicesRangeSum(int[] arr, int[][] query){
         System.out.print(sum + " ");
     }
 }
- 
-
-
-
-
-
-
-
-
