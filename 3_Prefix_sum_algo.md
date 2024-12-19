@@ -70,7 +70,7 @@ if(l == 0){
 ```
 ## Brute Force Approach of Range Sum Queries:
 
-- **TC**: `O(N^2)`
+- **TC**: `$O(N^2)$`
 - **SC**: `O(1)`
 
 ```
