@@ -187,7 +187,7 @@ public static boolean checkPrime(int N) {
 
 ❓ **Q3: Geometric Progression(GP)**
 
-    5 10 20 40 80 ....................  
+    5 10 20 40 80 ....................n 
 
     first value = a
     a = 5
