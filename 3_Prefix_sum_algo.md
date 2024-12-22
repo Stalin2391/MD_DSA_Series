@@ -251,6 +251,42 @@ If there are no elements that are at lower indexes or at higher indexes, then th
 $-10^5$ ≤ A[i] ≤ $10^5$
 
 
+```java
+int[] A = {-7, 1, 5, 2, -4, 3, 0}
+```
+
+```java
+int[] A = {-7, 1, 5, 2, -4, 3, 0};
+System.out.println(edbrium(A));
+```
+## Brute Force:
+
+- **TC**: $O(N^2)$
+- **SC**: O(1)
+
+- Given the constraints \(10^5\) and \(10^5 \times 10^5 = 10^{10}\), the brute force approach will result in a **Time Limit Exceeded (TLE)** error because \(10^{10} > 10^8\).
+
+
+```java
+public static int edbrium(int[] A){
+      int N = A.length;
+
+      for(int i = 0; i < N; i++){
+        int leftSum = 0;
+        for(int j = 0; j < i; j++){
+          leftSum += A[j];
+        }
+        int rightSum = 0;
+        for(int k = i + 1; k < N; k++){
+          rightSum += A[k];
+        }
+        if(leftSum == rightSum){
+          return i;
+        }
+      }
+      return -1;
+  }
+```
 
 ```java
 int[] A = {-7, 1, 5, 2, -4, 3, 0}
