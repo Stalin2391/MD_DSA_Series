@@ -261,7 +261,7 @@ int[] A = {-7, 1, 5, 2, -4, 3, 0};
 System.out.println(edbrium(A));
 ```
 
-![image alt](https://github.com/user-attachments/assets/55d90bf6-1926-4b2e-a6e4-18bb787e39c9)
+![image alt](https://github.com/user-attachments/assets/3c9c0fe9-dc4e-478b-8779-6e6f41aaedc3)
 
 
 ```java
