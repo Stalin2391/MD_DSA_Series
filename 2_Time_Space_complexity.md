@@ -21,7 +21,7 @@ $$ \log_b(a) $$
 This asks: *What value do you need to raise \( b \) to in order to get \( a \)?*
 
 ---
-
+## Perfect Square:
 ### ❓Question 1
 *In other words, what value must we raise 2 to in order to get 64?*
 
@@ -60,4 +60,17 @@ $$ 2^5 = 32 $$
 So, the answer is:
 
 $$ \log_2(32) = 5 $$
+
+## Not a Perfect Square than take floor Value
+
+### ❓Question 4
+
+$ \log_2(10) $
+
+
+$ 2^3 = 10 $
+
+So, the answer is:
+
+$ \log_2(10) = 3 $ 
 
