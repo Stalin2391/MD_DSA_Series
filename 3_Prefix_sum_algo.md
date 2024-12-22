@@ -237,7 +237,7 @@ public static void evenIndicesRangeSum(int[] arr, int[][] query){
 ```
 ## Equilibrium index :
 
-### Question:
+### ❓ Question:
 You are given an array A of integers of size N.
 Your task is to find the equilibrium index of the given array
 The equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes.
