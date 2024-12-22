@@ -24,7 +24,8 @@ This asks: *What value do you need to raise \( b \) to in order to get \( a \)?*
 
 ### Example 1
 
-❓ **Q1**: What is $$ \log_2(64) $$ ?
+❓ **Q1**: What is
+$$ \log_2(64) $$
 *In other words, what value must we raise 2 to in order to get 64?*
 
 $$ \log_2(64) $$
