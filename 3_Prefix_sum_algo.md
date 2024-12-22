@@ -264,7 +264,9 @@ System.out.println(edbrium(A));
 - **TC**: $O(N^2)$
 - **SC**: O(1)
 
-- Given the constraints \(10^5\) and \(10^5 \times 10^5 = 10^{10}\), the brute force approach will result in a **Time Limit Exceeded (TLE)** error because \(10^{10} > 10^8\).
+```java
+Given the constraints \(10^5\) and \(10^5 \times 10^5 = 10^{10}\), the brute force approach will result in a **Time Limit Exceeded (TLE)** error because \(10^{10} > 10^8\).
+```
 
 
 ```java
