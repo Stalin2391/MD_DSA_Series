@@ -28,7 +28,7 @@ prefixSum[2] = prefixSum[1] + arr[2] = 3 + 3 = 6
 prefixSum[3] = prefixSum[2] + arr[3] = 6 + 4 = 10
 prefixSum[4] = prefixSum[3] + arr[4] = 10 + 5 = 15
 ```
-![image alt](https://github.com/user-attachments/assets/967b7eb3-32d4-498f-92fd-f96a89c83d57)
+![image alt](https://github.com/user-attachments/assets/3c827864-b6a1-495f-84c1-4984b54c7858)
 #### Prefix Sum Formula
 ```
 prefixSum[i] = prefixSum[i-1] + arr[i]
