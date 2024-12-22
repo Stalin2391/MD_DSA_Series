@@ -245,12 +245,10 @@ If there are no elements that are at lower indexes or at higher indexes, then th
 
 ### Problem Constraints:
 
-```java
 
 - \( 1 \leq N \leq 10^5 \)
 - \( -10^5 \leq A[i] \leq 10^5 \)
 
-```
 
 ```java
 int[] A = {-7, 1, 5, 2, -4, 3, 0}
