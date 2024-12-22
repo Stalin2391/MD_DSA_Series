@@ -288,6 +288,11 @@ public static int edbrium(int[] A){
   }
 ```
 
+## Optimized:
+
+- **TC**: $O(N)$
+- **SC**: O(N) - Because of Prefix sum array
+
 ```java
 int[] A = {-7, 1, 5, 2, -4, 3, 0}
 ```
