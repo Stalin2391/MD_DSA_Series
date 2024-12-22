@@ -78,3 +78,6 @@ $$ \log_2(10) = 3 $$
 # Formula that you need to know for DSA:
 
 ![log formula](https://github.com/user-attachments/assets/d8a55a01-18a2-40d1-b96a-8aa6afeb5bdf)
+
+![log general formula](https://github.com/user-attachments/assets/16a11427-332d-4015-aed8-55c37777acca)
+
