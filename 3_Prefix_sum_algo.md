@@ -243,6 +243,13 @@ Your task is to find the equilibrium index of the given array
 The equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes.
 If there are no elements that are at lower indexes or at higher indexes, then the corresponding sum of elements is considered as 0.
 
+### Problem Constraints:
+
+```java
+1 <= N <= 105
+-105 <= A[i] <= 105
+```
+
 ```java
 int[] A = {-7, 1, 5, 2, -4, 3, 0}
 ```
