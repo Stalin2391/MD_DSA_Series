@@ -245,10 +245,11 @@ If there are no elements that are at lower indexes or at higher indexes, then th
 
 ### Problem Constraints:
 
-```java
+
 1 ≤ N ≤ $10^5$
+
 $-10^5$ ≤ A[i] ≤ $10^5$
-```
+
 
 
 ```java
