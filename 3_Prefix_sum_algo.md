@@ -255,3 +255,37 @@ $-10^5$ ≤ A[i] ≤ $10^5$
 ```java
 int[] A = {-7, 1, 5, 2, -4, 3, 0}
 ```
+
+```java
+int[] A = {-7, 1, 5, 2, -4, 3, 0};
+System.out.println(edbrium(A));
+```
+
+```java
+public static int edbrium(int[] A){
+    int N = A.length;
+    prefixSum[0] = A[0];
+    for(int i = 0; i < N; i++){
+        prefixSum[i] = prefixSum[i - 1] + A[i];
+    }
+    for(int i = 0; i < N; i++){
+        int leftSum = 0, rightSum = 0;
+        if(i != 0){
+            leftSum = prefixSum[i - 1];
+        }
+        rightSum = prefixSum[n - 1] - prefixSum[i];
+        if(leftSum  == rightSum) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+
+
+
+
+
+
+
+
