@@ -16,6 +16,8 @@ prefixSum[2] = arr[0] + arr[1] + arr[2] = 1 + 2 + 3 = 6
 prefixSum[3] = arr[0] + arr[1] + arr[2] + arr[3] = 1 + 2 + 3 + 4 = 10
 prefixSum[4] = arr[0] + arr[1] + arr[2] + arr[3] + arr[4] = 1 + 2 + 3 + 4 + 5 = 15
 ```
+![prefix sum brute force](https://github.com/user-attachments/assets/7fe5d5a4-2c86-4ddb-a9e3-ad1eaea3820a)
+
 In this case, we are repeatedly adding the previous value to the prefix sum array.
 So, let's apply **Prefix Sum Technique** to solve the problem.
 
@@ -28,7 +30,7 @@ prefixSum[2] = prefixSum[1] + arr[2] = 3 + 3 = 6
 prefixSum[3] = prefixSum[2] + arr[3] = 6 + 4 = 10
 prefixSum[4] = prefixSum[3] + arr[4] = 10 + 5 = 15
 ```
-![image alt](https://github.com/user-attachments/assets/3c827864-b6a1-495f-84c1-4984b54c7858)
+![prefix sum optimized](https://github.com/user-attachments/assets/3c827864-b6a1-495f-84c1-4984b54c7858)
 #### Prefix Sum Formula
 ```
 prefixSum[i] = prefixSum[i-1] + arr[i]
@@ -303,7 +305,7 @@ int[] A = {-7, 1, 5, 2, -4, 3, 0};
 System.out.println(edbrium(A));
 ```
 
-![image alt](https://github.com/user-attachments/assets/a6e21705-a23a-41dd-8f7a-9d016e1ff0ca)
+![Equalibrium optimized](https://github.com/user-attachments/assets/a6e21705-a23a-41dd-8f7a-9d016e1ff0ca)
 
 
 ```java
