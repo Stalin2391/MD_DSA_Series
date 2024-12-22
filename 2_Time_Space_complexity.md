@@ -11,7 +11,7 @@
 #### What is log ? 
 Inverse of Exponential function.
 The logarithm of \( a \) to the base \( b \) is expressed as:
-```
+
 $$ \log_b(a) $$
 
 
