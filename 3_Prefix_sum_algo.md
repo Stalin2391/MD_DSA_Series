@@ -263,6 +263,9 @@ System.out.println(edbrium(A));
 
 ![Screenshot 2024-12-22 at 12 58 45](https://github.com/user-attachments/assets/9366539f-8c2e-47c1-954f-6c23bfd34393)
 
+![Screenshot_2024-12-22_at_12 58 45-removebg-preview](https://github.com/user-attachments/assets/10647336-dfca-45f8-97f2-62f1756d0fd7)
+
+
 ```java
 public static int edbrium(int[] A){
     int N = A.length;
