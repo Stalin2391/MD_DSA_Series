@@ -74,3 +74,4 @@ So, the answer is:
 
 $$ \log_2(10) = 3 $$
 
+![log formula](https://github.com/user-attachments/assets/d8a55a01-18a2-40d1-b96a-8aa6afeb5bdf)
