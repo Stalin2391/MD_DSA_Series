@@ -88,5 +88,13 @@ for(int i = 0; i < N; i++){    // N + 1
   System.out.print("Hello");   // N
 }                              // 2N + 1
                                // In Big O Notation ---> O(N);
-```                            
+```
+
+| Step                                   | Operation Description        | Count (Number of Operations) |
+|----------------------------------------|------------------------------|------------------------------|
+| `for (int i = 0; i < N; i++)`          | Loop initialization and check | `N + 1` (1 for init, N for checks, 1 for exiting) |
+| `System.out.print("Hello");`           | Print "Hello" inside the loop | `N` (It runs N times, once per iteration) |
+| End of loop                            | Closing the loop             | `2N + 1` (For N checks and N prints) |
+| Big O Notation                         | Overall time complexity      | `O(N)`                       |
+
 
