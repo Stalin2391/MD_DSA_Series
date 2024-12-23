@@ -83,7 +83,7 @@ $$ \log_2(10) = 3 $$
 
 # Iterations:
 
-![Example Icon](https://upload.wikimedia.org/wikipedia/commons/a/a7/Java_logo.png) - Example 1:
+⭐ Example 1:
 
 ```java
 for(int i = 0; i < N; i++){    // N + 1
@@ -99,4 +99,20 @@ for(int i = 0; i < N; i++){    // N + 1
 | End of loop                            | Closing the loop             | `2N + 1` (For N checks and N prints) |
 | Big O Notation                         | Overall time complexity      | `O(N)`                       |
 
+
+⭐ Example 2:
+
+```java
+for (int i = 1; i < N; i *= 2) {   // Log N iterations
+    System.out.print("Hello");      // log N operations
+}                                  // O(log N) time complexity
+                                   // In Big O Notation ---> O(log N);
+
+```
+| Step                                   | Operation Description        | Count (Number of Operations)    |
+|----------------------------------------|------------------------------|---------------------------------|
+| `for (int i = 1; i < N; i *= 2)`       | Loop initialization and check | `log₂(N)` (logarithmic growth)  |
+| `System.out.print("Hello");`           | Print "Hello" inside the loop | `log₂(N)` (runs log₂(N) times) |
+| End of loop                            | Closing the loop             | `log₂(N)` (logarithmic exits)  |
+| Big O Notation                         | Overall time complexity      | `O(log N)`                      |
 
