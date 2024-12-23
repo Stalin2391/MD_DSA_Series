@@ -81,3 +81,12 @@ $$ \log_2(10) = 3 $$
 
 ![log general formula](https://github.com/user-attachments/assets/16a11427-332d-4015-aed8-55c37777acca)
 
+# Iterations:
+
+```java
+for(int i = 0; i < N; i++){    // N + 1
+  System.out.print("Hello");   // N
+}                              // 2N + 1
+                               // In Big O Notation ---> O(N);
+```                            
+
