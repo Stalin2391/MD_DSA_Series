@@ -147,8 +147,8 @@ for(int i = 0; i < N; i++){
 | ...                  | ...                   | ...                                       |
 | N-1                  | N                     | N                                         |
 
-$$
+$
 1 + 2 + 3 + \dots + N = \frac{N(N + 1)}{2}
-$$
+$
 
 Time complexity is  -  ${O(N^{2})}$
