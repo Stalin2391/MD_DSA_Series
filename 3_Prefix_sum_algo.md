@@ -138,7 +138,7 @@ rangeSum(arr, query);
 
 #### In-place Technique of Prefix Sum:
 
-- **TC**: `O(N)`
+- **TC**: `O(N + Q)`
 - **SC**: `O(1)`
 
   
