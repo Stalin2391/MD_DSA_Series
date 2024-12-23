@@ -177,7 +177,7 @@ rangeSum(arr, query);
 
 ### Brute Force:
 
-- **TC**: $O(N^2)$
+- **TC**: $O(Q * N)$
 - **SC**: O(1)
 
 ```java
@@ -328,11 +328,3 @@ public static int edbrium(int[] A){
     return -1;
 }
 ```
-
-
-
-
-
-
-
-
