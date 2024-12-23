@@ -73,7 +73,7 @@ if(l == 0){
 ```
 ## Brute Force Approach of Range Sum Queries:
 
-- **TC**: $O(N^2)$
+- **TC**: $O(Q * N)$
 - **SC**: O(1)
 
 ```java
