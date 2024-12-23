@@ -331,6 +331,9 @@ public static int edbrium(int[] A){
 
 ## Without Prefix Sum - Equalibrium:
 
+- **TC**: $O(N)$
+- **SC**: O(1)
+
 ```java
 int[] A = {-7, 1, 5, 2, -4, 3, 0};
 System.out.println(edbrium(A));
