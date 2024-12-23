@@ -328,3 +328,35 @@ public static int edbrium(int[] A){
     return -1;
 }
 ```
+
+## Without Prefix Sum - Equalibrium:
+
+```java
+int[] A = {-7, 1, 5, 2, -4, 3, 0};
+System.out.println(edbrium(A));
+```
+
+```java
+public static int edbrium(int[] A){
+    int N = A.length;
+    int leftSum = 0, rightSum = 0, pivot = 0;
+
+    // Calculate the right sum
+    for(int i = 1; i < N; i++){
+        rightSum += A[i];
+    }
+
+     // Iterate pivot over all the elements of the array
+    // and until left != right
+    while(pivot < N - 1 && leftSum != rightSum){
+        pivot++;
+        rightSum -= A[pivot];
+        leftSum += A[pivot - 1]; 
+    }
+    // If leftSum == rightSum, return pivot as the equilibrium index
+    if(leftSum == rightSum){
+        return pivot;
+    }
+    return -1;
+}
+```
