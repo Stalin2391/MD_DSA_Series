@@ -83,6 +83,8 @@ $$ \log_2(10) = 3 $$
 
 # Iterations:
 
+![Example Icon](https://upload.wikimedia.org/wikipedia/commons/a/a7/Java_logo.png) - Example 1:
+
 ```java
 for(int i = 0; i < N; i++){    // N + 1
   System.out.print("Hello");   // N
