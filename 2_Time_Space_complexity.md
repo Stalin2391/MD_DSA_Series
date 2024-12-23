@@ -116,3 +116,12 @@ for (int i = 1; i < N; i *= 2) {   // Log N iterations
 | End of loop                            | Closing the loop             | `log₂(N)` (logarithmic exits)  |
 | Big O Notation                         | Overall time complexity      | `O(log N)`                      |
 
+
+⭐ Example 3:
+
+In practical terms, this is a logical error in the code, and the expectation is that the program will hang or crash due to the infinite loop.
+
+```java
+for (int i = 0; i < N; i *= 2) {   // Infinite iterations - beacause of i = 0 , i = 0 * 2, i = 0; i *= 2 will result in i staying 0 indefinitely
+    System.out.print("Hello");      // infinite operations
+}                                  // (∞) Loop
