@@ -125,3 +125,30 @@ In practical terms, this is a logical error in the code, and the expectation is 
 for (int i = 0; i < N; i *= 2) {   // Infinite iterations - beacause of i = 0 , i = 0 * 2, i = 0; i *= 2 will result in i staying 0 indefinitely
     System.out.print("Hello");      // infinite operations
 }                                  // (∞) Loop
+
+```
+⭐ Example 4:
+
+```java
+for(int i = 0; i < N; i++){      
+    for(int j = 0; j <= i; j++){   
+      System.out.print("Hello");  
+    }
+}
+```
+
+| Outer Loop Index (i) | Inner Loop Iterations | Total Print Executions (System.out.print) |
+|----------------------|-----------------------|-------------------------------------------|
+| 0                    | 1                     | 1                                         |
+| 1                    | 2                     | 2                                         |
+| 2                    | 3                     | 3                                         |
+| 3                    | 4                     | 4                                         |
+| 4                    | 5                     | 5                                         |
+| ...                  | ...                   | ...                                       |
+| N-1                  | N                     | N                                         |
+
+$$
+1 + 2 + 3 + \dots + N = \frac{N(N + 1)}{2}
+$$
+
+Time complexity is  -  ${O(N^{2})}$
