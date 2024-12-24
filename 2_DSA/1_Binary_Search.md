@@ -6,7 +6,7 @@ Given an array of size N, find the index of the element k. If k is present in th
 
 ### Optimized Approach:
 
-_TC_ : O(N)  
+_TC_ : O(log N)  
 _SC_ : O(1)
 
 ```java
