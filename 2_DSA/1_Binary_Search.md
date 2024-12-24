@@ -98,8 +98,8 @@ _SC_ : O(1)
 
 ```java
 
-int[] arr = {2, 3, 4, 10, 40};
-int k = 10;
+int[] arr = {1, 2, 2, 2, 3, 4, 5};
+int k = 2;
 findIndex(arr, k);
 
 ```
