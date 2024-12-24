@@ -2,7 +2,7 @@
 #### Binary Search
 
 
-------------------------------------------------------------
+----
 
 
 #### ❓ Question:
@@ -54,10 +54,14 @@ findIndex(arr, k);
 
 ```
 
-Note:
-    - Target
-    - search space
-    - condition
+<div style="margin-bottom : 15px; padding: 15px; border: 2px solid #81C784; border-radius: 5px;">
+  <strong style="color: #388E3C; font-size: 18px;">Note:</strong>
+
+🔹 **Target**  
+🔸 **Search space**  
+🔵 **Condition**
+
+</div>
 
 ```java
 public static int findIndex(int[] arr, int k){
