@@ -2,6 +2,9 @@
 #### Binary Search
 
 
+------------------------------------------------------------
+
+
 #### ❓ Question:
 
 Given an array of size N, find the index of the element k. If k is present in the array, return its index. If k is not found in the array, return -1.
