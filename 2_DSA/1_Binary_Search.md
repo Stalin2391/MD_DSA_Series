@@ -218,3 +218,51 @@ public static int uniqueElement(int[] arr){
     return ans;
 }
 ```
+
+#### Optimized Approach:
+
+> _TC_ : $O(log N)$  
+> _SC_ : O(1)
+
+```java
+
+int[] arr = {8, 8, 5, 5, 6, 2, 2};
+uniqueElement(arr);
+
+```
+
+```java
+
+public static int uniqueElement(int[] arr){
+    int N = arr.length;
+
+    //Edge case
+    if(N == 1) return arr[0];
+    if(arr[0] != arr[1]) return arr[0];
+    if(arr[N - 1] != arr[N - 2]) return arr[N - 1];
+
+    int l = 1, h = N - 2;
+
+    while(l <= h){
+        int mid = l + (h - l) / 2;
+
+        if(arr[mid] != arr[mid - 1] && arr[mid] != arr[mid + 1]){
+            return arr[mid];
+        }
+
+        int firstOccurance = mid;
+
+        if(arr[mid - 1] == arr[mid]){
+            firstOccurance = mid - 1;
+        }
+
+        if(firstOccurance % 2 == 0){
+            l = mid + 1;
+        }else {
+            h = mid - 1;
+        }
+    }
+    return -1;
+}
+
+```
