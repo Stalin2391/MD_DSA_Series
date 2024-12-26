@@ -119,3 +119,43 @@ public static int findIndex(int[] arr, int k){
 }
 
 ```
+
+#### ❓ Question 3:
+
+Everey elements occures twice except for one. Find the unique element. Duplicate elements are adjacent to each other but array is not sorted.
+
+#### Brute force:
+
+_TC_ : $O(N^2)$
+
+_SC_ : O(1)
+
+
+```java
+
+int[] arr = {8, 8, 5, 5, 6, 2, 2};
+uniqueElement(arr);
+
+```
+```java
+public static int uniqueElement(int[] arr){
+    int N = arr.length;
+
+    int ans = 0;
+    for(int i = 0; i < N; i++){
+        boolean isUnique = true;
+        for(int j = 0; j < N; j++){
+            if(i != j && arr[i] == arr[j]){
+                isUnique = false;
+                break;
+            }
+        }
+
+        if(isUnique){
+            ans = arr[i];
+        }
+    }
+    return ans;
+}
+```
+
