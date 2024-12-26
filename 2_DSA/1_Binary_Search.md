@@ -126,10 +126,9 @@ Everey elements occures twice except for one. Find the unique element. Duplicate
 
 #### Brute force:
 
-_TC_ : $O(N^2)$
 
-_SC_ : O(1)
-
+> _TC_ : $O(N^2)$  
+> _SC_ : O(1)
 
 ```java
 
