@@ -158,3 +158,38 @@ public static int uniqueElement(int[] arr){
 }
 ```
 
+#### Better:
+
+> _TC_ : O(N) 
+> _SC_ : O(N)
+
+```java
+
+int[] arr = {8, 8, 5, 5, 6, 2, 2};
+uniqueElement(arr);
+
+```
+
+```java
+public static int uniqueElement(int[] arr){
+    int N = arr.length;
+    HashMap<Integer, Integer> map = new HashMap<>();
+
+    for(int i = 0; i < N; i++){
+        if(map.containsKey(arr[i])){
+            int val = map.get(arr[i]);
+            map.put(arr[i], val + 1);
+        }else {
+            map.put(arr[i],  1);
+        }
+    }
+    int ans = 0;
+    for(int i = 0; i < N; i++){
+        if(map.get(arr[i]) == 1){
+            ans = arr[i];
+        }
+    }
+    return ans;
+}
+
+```
