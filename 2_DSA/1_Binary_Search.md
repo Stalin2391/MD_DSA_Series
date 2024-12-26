@@ -193,3 +193,28 @@ public static int uniqueElement(int[] arr){
 }
 
 ```
+
+#### Best:
+
+> _TC_ : $O(N)$  
+> _SC_ : O(1)
+
+```java
+
+int[] arr = {8, 8, 5, 5, 6, 2, 2};
+uniqueElement(arr);
+
+```
+
+```java
+public static int uniqueElement(int[] arr){
+    int N = arr.length;
+    int ans = 0;
+
+    for(int i = 0; i < N; i++){
+        ans = ans ^ arr[i];
+    }
+
+    return ans;
+}
+```
