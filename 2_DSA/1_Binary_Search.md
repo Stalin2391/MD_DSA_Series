@@ -160,8 +160,8 @@ public static int uniqueElement(int[] arr){
 
 #### Better:
 
-> _TC_ : O(N) 
-> _SC_ : O(N)
+> _TC_ : $O(N)$  
+> _SC_ : O(1)
 
 ```java
 
