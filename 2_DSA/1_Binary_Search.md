@@ -120,6 +120,45 @@ public static int findIndex(int[] arr, int k){
 
 ```
 
+## Optimized Approach:
+
+_TC_ : O(log N)  
+_SC_ : O(1)
+
+```java
+
+int[] arr = {1, 2, 2, 2, 3, 4, 5};
+int k = 2;
+firstOccurrence(arr, k);
+
+```
+```java
+
+public static int firstOccurrence(int[] arr, int k){
+
+    int N = arr.length;
+    int l = 0, h = N - 1;
+
+    int ans = -1;
+
+    while(l <= h){
+        int mid = l + (h - l) / 2;
+
+        if(arr[mid] == k){
+            ans = mid;
+            // go to left
+            h = mid - 1;
+        }else if(arr[mid] < k){
+            l = mid + 1;
+        }else {
+            h = mid - 1;
+        }
+    }
+    return ans;
+}
+
+```
+
 #### ❓ Question 3:
 
 Everey elements occures twice except for one. Find the unique element. Duplicate elements are adjacent to each other but array is not sorted.
