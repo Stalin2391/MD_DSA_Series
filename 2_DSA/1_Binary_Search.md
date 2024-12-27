@@ -373,3 +373,78 @@ public static int uniqueElement(int[] arr){
 }
 
 ```
+#### ❓ Question 5:
+
+Given an array of N distinct elements find **any local minima** in the array
+**Local Minima**: An element in an array that is smaller than both its neighbors.
+
+#### Brute force:
+
+> _TC_ : $O(N)$  
+> _SC_ : O(1)
+
+```java
+
+int[] arr = {9, 6, 3, 4, 5, 10, 12};
+findLocalMinima(arr);
+
+```
+
+```java
+
+public static int findLocalMinima(int[] arr) {
+    int N = arr.length;
+
+    if(N == 1) return arr[0];
+    if(arr[0] < arr[1]) return arr[0];
+    if(arr[N - 1] < arr[N - 2]) return arr[N - 1];
+    
+    for(int i = 1; i < N - 1; i++){
+        if(arr[i - 1] > arr[i] && arr[i + 1] > arr[i]){
+            return i; // or return arr[i]
+        }
+    }
+
+    return -1;
+}
+
+```
+
+#### Optimized Approach:
+
+> _TC_ : $O(log N)$  
+> _SC_ : O(1)
+
+```java
+
+int[] arr = {9, 6, 3, 4, 5, 10, 12};
+findLocalMinima(arr);
+
+```
+
+```java
+
+public static int findLocalMinima(int[] arr) {
+    int N = arr.length;
+
+    if(N == 1) return arr[0];
+    if(arr[0] < arr[1]) return arr[0];
+    if(arr[N - 1] < arr[N - 2]) return arr[N - 1];
+    
+    int l = 1; int h = N - 2;
+    while(l <= h){
+        int mid = l + (h - l) / 2;
+        if(arr[mid - 1] > arr[mid] && arr[mid + 1] > arr[mid]){
+            return mid;
+        }
+        if(arr[mid] > arr[mid - 1]){
+            h = mid - 1;
+        }else {
+            l = mid + 1;
+        }
+    }
+
+    return -1;
+}
+
+```
