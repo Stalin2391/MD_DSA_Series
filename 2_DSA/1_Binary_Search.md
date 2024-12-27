@@ -375,8 +375,12 @@ public static int uniqueElement(int[] arr){
 ```
 #### ❓ Question 5:
 
-Given an array of N distinct elements find **any local minima** in the array
-**Local Minima**: An element in an array that is smaller than both its neighbors.
+##### Given an array of N distinct elements, find **any local minima** in the array.
+
+**Local Minima:** An element in an array that is smaller than both its neighbors.
+
+> **Note**: The local minima should be smaller than both its neighbors.
+
 
 #### Brute force:
 
