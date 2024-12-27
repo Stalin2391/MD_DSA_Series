@@ -250,13 +250,13 @@ public static int uniqueElement(int[] arr){
             return arr[mid];
         }
 
-        int firstOccurance = mid;
+        int firstOccurrence = mid;
 
         if(arr[mid - 1] == arr[mid]){
-            firstOccurance = mid - 1;
+            firstOccurrence = mid - 1;
         }
 
-        if(firstOccurance % 2 == 0){
+        if(firstOccurrence % 2 == 0){
             l = mid + 1;
         }else {
             h = mid - 1;
