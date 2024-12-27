@@ -89,7 +89,7 @@ public static int findIndex(int[] arr, int k){
 
 #### ❓ Question 2:
 
-Find the first occurrence of an element in a sorted array
+Find the first occurrence index of an element in a sorted array
 
 ## Brute Force:
 
@@ -100,13 +100,13 @@ _SC_ : O(1)
 
 int[] arr = {1, 2, 2, 2, 3, 4, 5};
 int k = 2;
-findIndex(arr, k);
+firstOccurrence(arr, k);
 
 ```
 
 ```java
 
-public static int findIndex(int[] arr, int k){
+public static int firstOccurrence(int[] arr, int k){
     int N = arr.length;
 
     for(int i = 0; i < N; i++){
@@ -160,6 +160,39 @@ public static int firstOccurrence(int[] arr, int k){
 ```
 
 #### ❓ Question 3:
+
+Find the Last occurrence index of an element in a sorted array
+
+## Brute Force:
+
+_TC_ : O(N)  
+_SC_ : O(1)
+
+```java
+
+int[] arr = {1, 2, 2, 2, 3, 4, 5};
+int k = 2;
+lastOccurrence(arr, k);
+
+```
+
+```java
+
+public static int lastOccurrence(int[] arr, int k){
+    int N = arr.length;
+
+    for(int i = N - 1; i >= 0; i--){
+        if(arr[i] == k){
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+```
+
+#### ❓ Question 4:
 
 Everey elements occures twice except for one. Find the unique element. Duplicate elements are adjacent to each other but array is not sorted.
 
