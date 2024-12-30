@@ -21,6 +21,9 @@ Constraints:
 
 ## Brute Force Idea:
 
+- **TC**: $O(N^{2})$
+- **SC**: O(1)
+
 <img width="1316" alt="Screenshot 2024-12-29 at 20 59 44" src="https://github.com/user-attachments/assets/4c8169fd-38e7-4f00-a69f-74f82173056b" />
 
 ```java
@@ -138,6 +141,46 @@ public void printSubArrays(int[] arr){
 }
 
 ```
+
+## Question: Given an array of integers, find the maximum sum of a subarray of size k
+
+## Brute Force Idea:
+
+- **TC**: $O(N^{2})$
+- **SC**: O(1)
+
+
+### code:
+
+```java
+
+int[] arr = {-3, 4, -2, 5, 3, -2, 8, 2, -1, 4};
+int k = 5;
+System.out.print(maxSubArraySum(arr, k));
+
+```
+
+```java
+
+public static int maxSubArraySum(int[] arr, int k){
+    int N = arr.length;
+    int i = 0;
+    int max_sum = 0;
+
+    while(i <= N - k){
+      int sum = 0;
+      for(int j = i; j < k + i; j++){
+        sum += arr[j];
+      }
+      max_sum = Math.max(sum, max_sum);
+      i++;
+    }
+    return max_sum;
+}
+
+```
+
+
 
 
 
