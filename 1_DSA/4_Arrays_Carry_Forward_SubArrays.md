@@ -52,6 +52,50 @@ public static int coutPairs(char[] ch){
 
 <img width="1316" alt="Screenshot 2024-12-30 at 08 54 44" src="https://github.com/user-attachments/assets/7f45950a-55e8-4678-8d59-661a6c7b1850" />
 
+#### code: Left to Right:
+
+```java
+char[] ch = {'d', 'a', 'a', 'g', 'd', 'c', 'a', 'g'};
+System.out.print(coutPairs(ch));
+
+```
+
+```java
+
+public static int coutPairs(char[] ch){
+    int N = ch.length;
+    int ans = 0;
+    int ca = 0;
+    for(int i = 0; i < N; i++){
+      if(ch[i] == 'a'){
+        ca++;
+      }else if(ch[i] == 'g'){
+        ans += ca;
+      }
+    }
+    return ans;
+}
+
+```
+#### code: Right to Left:
+
+```java
+public static int coutPairs(char[] ch){
+    int N = ch.length;
+    int ans = 0;
+    int cg = 0;
+    for(int i = N - 1; i >= 0; i--){
+      if(ch[i] == 'g'){
+        cg++;
+      }else if(ch[i] == 'a'){
+        ans += cg;
+      }
+    }
+    return ans;
+}
+
+```
+
 
 
 <img width="1289" alt="Screenshot 2024-12-30 at 09 37 34" src="https://github.com/user-attachments/assets/43697c50-261c-4b8a-9862-17e64746c2b1" />
