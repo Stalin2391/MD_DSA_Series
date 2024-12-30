@@ -180,6 +180,43 @@ public static int maxSubArraySum(int[] arr, int k){
 
 ```
 
+## Optimization idea: 
+
+- **TC**: $O(N)$
+- **SC**: O(1)
+
+```java
+
+int[] arr = {-3, 4, -2, 5, 3, -2, 8, 2, -1, 4};
+int k = 5;
+System.out.print(maxSubArraySum(arr, k));
+
+```
+### Sliding window technique:
+
+```java
+
+public static int maxSubArraySum(int[] arr, int k){
+    int N = arr.length;
+    int max_sum = Integer.MIN_VALUE;
+    int sum = 0;
+
+    for(int i = 0; i < k; i++){
+      sum += arr[i];
+    }
+
+    max_sum = Math.max(sum, max_sum);
+
+    for(int i = 1; i < N - k; i++){
+      sum = sum - arr[i - 1] + arr[k + i - 1];
+      max_sum = Math.max(sum, max_sum);
+    }
+    
+    return max_sum;
+}
+
+
+
 
 
 
