@@ -211,14 +211,6 @@ public static int maxSubArraySum(int[] arr, int k){
       sum = sum - arr[i - 1] + arr[k + i - 1];
       max_sum = Math.max(sum, max_sum);
     }
-    
+
     return max_sum;
 }
-
-
-
-
-
-
-
-
