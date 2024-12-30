@@ -231,6 +231,9 @@ System.out.print(maxSubArrSum(arr));
 
 #### Idea 1:
 
+- **TC**: $O(N^{3})$
+- **SC**: O(1)
+
 ```java
 
 public static int maxSubArrSum(int[] arr){
@@ -252,6 +255,9 @@ public static int maxSubArrSum(int[] arr){
 
 #### Idea 2:
 
+- **TC**: $O(N^{2})$
+- **SC**: O(1)
+
 ```java
 
 public static int maxSubArrSum(int[] arr){
@@ -267,4 +273,35 @@ public static int maxSubArrSum(int[] arr){
   return max_sum;
 }
 
+```
+
+## Optimization idea: 
+
+- **TC**: $O(N)$
+- **SC**: O(1)
+
+```java
+
+int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+System.out.print(maxSubArrSum(arr));
+
+```
+### Kadane’s Algorithm:
+
+```java 
+
+public static int maxSubArrSum(int[] arr){
+
+  int N = arr.length;
+  int sum = 0;
+  int max_sum = Integer.MIN_VALUE;
+  for(int i = 0; i < N; i++){
+    sum += arr[i];
+    max_sum = Math.max(sum, max_sum);
+    if(sum < 0){
+      sum = 0;
+    }
+  }
+  return max_sum;
+}
 ```
