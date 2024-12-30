@@ -18,9 +18,10 @@ Constraints:
 ```
 
 <img width="1276" alt="Screenshot 2024-12-29 at 20 59 33" src="https://github.com/user-attachments/assets/f2e229da-ed74-46bc-a110-23f285b788d9" />
-<img width="1316" alt="Screenshot 2024-12-29 at 20 59 44" src="https://github.com/user-attachments/assets/4c8169fd-38e7-4f00-a69f-74f82173056b" />
 
 ## Brute Force Idea:
+
+<img width="1316" alt="Screenshot 2024-12-29 at 20 59 44" src="https://github.com/user-attachments/assets/4c8169fd-38e7-4f00-a69f-74f82173056b" />
 
 ```java
 char[] ch = {'d', 'a', 'a', 'g', 'd', 'c', 'a', 'g'};
