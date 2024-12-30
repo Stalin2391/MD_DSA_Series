@@ -95,10 +95,50 @@ public static int coutPairs(char[] ch){
 }
 
 ```
+# Sub Arrays
 
+### Question: Print all Sub arrays:
 
+```java
+
+int[] arr = {4, 2, 10, 3, 12 , -2, 15};
+
+```
+### Dry Run:
+If we know the start and end indices of a subarray, we can print all the subarrays that lie between those indices.
 
 <img width="1289" alt="Screenshot 2024-12-30 at 09 37 34" src="https://github.com/user-attachments/assets/43697c50-261c-4b8a-9862-17e64746c2b1" />
+
+### What is Sub arrays:
+- Subarrays can be visualized as contiguous part of an array, where the starting and ending indices determine the subarray.
+- Single element also considered as sub array
+- Array considered as sub array
+- Sub array should be left to right
+
 <img width="1118" alt="Screenshot 2024-12-30 at 09 37 19" src="https://github.com/user-attachments/assets/973e19ba-e414-4a4e-9f8e-443b0005ec81" />
+
+
+### code: 
+
+- **TC**: $O(N^{3})$
+- **SC**: O(1)
+
+```java
+
+public void printSubArrays(int[] arr){
+  int N = arr.length;
+  for(int start = 0; start < N; start++){
+      for(int end = start; end < N; end++){
+        for(int i = start; i <= end; i++){
+          System.out.print(arr[k] + " ");
+        }
+        System.out.println();
+      }
+  }
+}
+
+```
+
+
 
 
