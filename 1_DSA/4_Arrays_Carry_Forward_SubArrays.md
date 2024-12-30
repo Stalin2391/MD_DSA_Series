@@ -214,3 +214,57 @@ public static int maxSubArraySum(int[] arr, int k){
 
     return max_sum;
 }
+
+```
+
+## Question: Given an integer array arr[], find the contiguous subarray (containing at least one number) that has the largest sum and return the sum.
+
+
+```java
+
+int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+System.out.print(maxSubArrSum(arr));
+
+```
+
+### Brute force idea:
+
+#### Idea 1:
+
+```java
+
+public static int maxSubArrSum(int[] arr){
+  int N = arr.length;
+  int max_sum = 0;
+  for(int i = 0; i < N; i++){
+    for(int j = i; j < N; j++){
+       int sum = 0;
+       for(int k = i; k <= j; k++){
+          sum += arr[k];
+       }
+       max_sum = Math.max(sum, max_sum);
+    }
+  }
+  return max_sum;
+}
+
+```
+
+#### Idea 2:
+
+```java
+
+public static int maxSubArrSum(int[] arr){
+  int N = arr.length;
+  int max_sum = 0;
+  for(int i = 0; i < N; i++){
+    int sum = 0;
+    for(int j = i; j < N; j++){
+      sum += arr[j];
+      max_sum = Math.max(sum, max_sum);
+    }
+  }
+  return max_sum;
+}
+
+```
