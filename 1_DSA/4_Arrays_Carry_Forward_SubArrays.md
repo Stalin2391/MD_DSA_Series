@@ -25,3 +25,8 @@ Constraints:
 <img width="1316" alt="Screenshot 2024-12-30 at 08 54 44" src="https://github.com/user-attachments/assets/7f45950a-55e8-4678-8d59-661a6c7b1850" />
 
 
+
+<img width="1289" alt="Screenshot 2024-12-30 at 09 37 34" src="https://github.com/user-attachments/assets/43697c50-261c-4b8a-9862-17e64746c2b1" />
+<img width="1118" alt="Screenshot 2024-12-30 at 09 37 19" src="https://github.com/user-attachments/assets/973e19ba-e414-4a4e-9f8e-443b0005ec81" />
+
+
