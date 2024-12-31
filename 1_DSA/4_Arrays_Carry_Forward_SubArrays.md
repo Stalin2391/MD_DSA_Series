@@ -396,7 +396,8 @@ System.out.print(leastLengthSubarrayWithMinMax(arr));
         }
 
         if(lastMinIndex != -1 && lastMaxIndex != -1){
-          minLength = Math.min(minLength, lastMaxIndex - lastMinIndex + 1);
+            int currentLength = Math.abs(lastMinIndex - lastMaxIndex) + 1;
+            minLength = Math.min(minLength, currentLength);
         }
     }
     return minLength;
