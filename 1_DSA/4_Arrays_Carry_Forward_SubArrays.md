@@ -305,3 +305,53 @@ public static int maxSubArrSum(int[] arr){
   return max_sum;
 }
 ```
+
+# Question:
+
+Find the least length of a subarray that contains both the minimum and maximum elements in an array
+
+### Brute force idea:
+
+- **TC**: $O(N^{3})$
+- **SC**: O(1)
+
+```java
+
+int[] arr = {1, 3, 2, 7, 9, 5, 0, 3};
+System.out.print(leastLengthSubarrayWithMinMax(arr));
+
+```
+
+```java
+ public static int leastLengthSubarrayWithMinMax(int[] arr) {
+    int N = arr.length;
+    int minEle = Integer.MAX_VALUE;
+    int maxEle = Integer.MIN_VALUE;
+
+    for(int i = 0; i < N; i++){
+      if(arr[i] > maxEle){
+        maxEle = arr[i];
+      }
+      if(arr[i] < minEle){
+        minEle = arr[i];
+      }
+    }
+
+    int minLength = Integer.MAX_VALUE;
+
+    for(int i = 0; i < N; i++){
+      for(int j = i; j < N; j++){
+        boolean isMin = false;
+        boolean isMax = false;
+        for(int k = i; k <= j; k++){
+          if(arr[k] == minEle) isMin = true;
+          if(arr[k] == maxEle) isMax = true;
+          if(isMax && isMin) break;
+        }
+       if(isMin && isMax) minLength = Math.min(minLength, j - i + 1);
+      }
+    }
+    return maxLength;
+ }
+
+ ``
