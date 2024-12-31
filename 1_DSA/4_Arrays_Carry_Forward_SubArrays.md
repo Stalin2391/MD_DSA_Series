@@ -351,7 +351,55 @@ System.out.print(leastLengthSubarrayWithMinMax(arr));
        if(isMin && isMax) minLength = Math.min(minLength, j - i + 1);
       }
     }
-    return maxLength;
+    return minLength;
+ }
+
+ ```
+
+ ### Optimized idea:
+
+- **TC**: $O(N)$
+- **SC**: O(1)
+
+```java
+
+int[] arr = {1, 3, 2, 7, 9, 5, 0, 3};
+System.out.print(leastLengthSubarrayWithMinMax(arr));
+
+```
+
+```java
+ public static int leastLengthSubarrayWithMinMax(int[] arr) {
+    int N = arr.length;
+    int minEle = Integer.MAX_VALUE;
+    int maxEle = Integer.MIN_VALUE;
+
+    for(int i = 0; i < N; i++){
+      if(arr[i] > maxEle){
+        maxEle = arr[i];
+      }
+      if(arr[i] < minEle){
+        minEle = arr[i];
+      }
+    }
+
+    int minLength = N;
+    int lastMinIndex = -1;
+    int lastMaxIndex = -1;
+
+    for(int i = 0; i < N; i++){
+        if(arr[i] == minEle){
+          lastMinIndex = i;
+        }
+        if(arr[i] == maxEle){
+          lastMaxIndex = i;
+        }
+
+        if(lastMinIndex != -1 && lastMaxIndex != -1){
+          minLength = Math.min(minLength, lastMaxIndex - lastMinIndex + 1);
+        }
+    }
+    return minLength;
  }
 
  ```
