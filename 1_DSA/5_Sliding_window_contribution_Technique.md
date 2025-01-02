@@ -93,6 +93,25 @@ System.out.print(sumOfAllSubArr(A));
 For ***ith Index*** is `(i + 1) (N - i)`
 
 
+```java
+
+public static int sumOfAllSubArrContribution(int[] arr){
+    int N = arr.length;
+    int totalSum = 0;
+    
+    for(int i = 0; i < N; i++){
+        int freq = (i + 1) * (N - i);
+        int contribution = arr[i] * freq;
+        totalSum += contribution;
+    }
+    
+    return totalSum;
+}
+
+
+```
+
+
 ### Dry Run : 
 
 The contribution technique involves calculating the contribution of each element in the array to the total sum of all subarrays, then multiplying it by the number of times that element appears in all possible subarrays.Count the Each elements contribution and multiply with their contribution
