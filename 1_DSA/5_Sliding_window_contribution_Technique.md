@@ -3,7 +3,9 @@
 ### Contribution Technique
 ### Sliding Window
 
-#### Question:
+-----
+
+## Question:
 
 Given an array 𝐴 of size 𝑁, write a program to find the **sum of all subarrays** of the array. A subarray is any contiguous segment of the array.
 
