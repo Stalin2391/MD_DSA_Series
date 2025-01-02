@@ -117,3 +117,42 @@ public static int sumOfAllSubArrContribution(int[] arr){
 The contribution technique involves calculating the contribution of each element in the array to the total sum of all subarrays, then multiplying it by the number of times that element appears in all possible subarrays.Count the Each elements contribution and multiply with their contribution
 
 ![Screenshot 2025-01-02 at 09 43 53](https://github.com/user-attachments/assets/2a66e328-d8bb-406b-8ab2-3c8c51ed6960)
+
+## Sliding Window Maximum (Maximum Sum of all subarrays of size K)
+
+Given an array and an integer K, find the maximum sum and every contiguous subarray of size K.
+
+
+```java
+
+int[] arr = {1,2,3,4,5};
+int k = 3;
+System.out.print(maxSubArraySum(arr, k));
+
+```
+
+
+```java
+
+public static int maxSubArraySum(int[] arr, int k){
+    int N = arr.length;
+    int windowSum = 0;
+
+    for(int i = 0; i < k; i++){
+        windowSum += arr[i];
+    }
+    
+    int maxSum = windowSum;
+
+    for(int i = 1; i <= N - k; i++){
+        windowSum = windowSum - arr[i - 1] + arr[ k + i - 1];
+        if(windowSum > maxSum){
+            maxSum = windowSum;
+        }
+    }
+    return maxSum;
+}
+
+
+
+```
