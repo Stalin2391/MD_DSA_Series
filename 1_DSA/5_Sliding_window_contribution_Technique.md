@@ -87,8 +87,8 @@ System.out.print(sumOfAllSubArr(A));
 
 ### Formula: 
 
-(i+1): Number of subarrays that start from index 0 to 𝑖 i. ( 𝑁 − 𝑖 ).
-(N−i): Number of subarrays that end at index 𝑖 i and go until the end of the array.
+- **(i+1):** Number of subarrays that start from index 0 to \(i\).
+- **(N-i):** Number of subarrays that end at index \(i\) and go until the end of the array.
 
 For ***ith Index*** is `(i + 1) (N - i)`
 
