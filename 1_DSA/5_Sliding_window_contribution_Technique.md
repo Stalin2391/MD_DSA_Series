@@ -78,7 +78,7 @@ public static int sumOfAllSubArr(int[] arr){
 ```java
 
 int[] A = {3, 2, 1, 4, 7, 9};
-System.out.print(sumOfAllSubArr(A));
+System.out.print(sumOfAllSubArrContribution(A));
 
 ```
 
