@@ -11,6 +11,8 @@ Given an array 𝐴 of size 𝑁, write a program to find the **sum of all subar
 
 ## Brute Force Idea:
 
+We can iterate over all possible subarrays of the given array and compute the sum for each subarray individually
+
 #### Idea 1:
 
 - **TC**: $O(N^{3})$
@@ -21,6 +23,26 @@ Given an array 𝐴 of size 𝑁, write a program to find the **sum of all subar
 
 int[] A = {3, 2, 1, 4, 7, 9};
 System.out.print(sumOfAllSubArr(A));
+
+```
+
+```java
+
+public static int sumOfAllSubArr(int[] arr){
+    int N = arr.length;
+    int totalSum = 0;
+    for(int i = 0; i < N; i++){
+        for(int j = i; j < N; j++){
+            int sum = 0;
+            for(int k = i; k <= j; k++){
+                sum += arr[k];
+            }
+            totalSum += sum;
+        }
+    }
+    return totalSum;
+}
+
 
 ```
 
