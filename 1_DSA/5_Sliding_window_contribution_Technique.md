@@ -46,6 +46,29 @@ public static int sumOfAllSubArr(int[] arr){
 
 ```
 
+#### Idea 2:
+
+
+- **TC**: $O(N^{2})$
+- **SC**: O(1)
+
+```java
+
+public static int sumOfAllSubArr(int[] arr){
+    int N = arr.length;
+    int totalSum = 0;
+    for(int i = 0; i < N; i++){
+        int sum = 0;
+        for(int j = i; j < N; j++){
+            sum += arr[j];
+            totalSum += sum;
+        }
+    }
+    return totalSum;    
+}
+
+```
+
 ## Contribution Technique
 
 ![Screenshot 2025-01-02 at 09 43 53](https://github.com/user-attachments/assets/2a66e328-d8bb-406b-8ab2-3c8c51ed6960)
