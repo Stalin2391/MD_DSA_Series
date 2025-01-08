@@ -153,13 +153,16 @@ $$
 
 Time complexity is  -  ${O(N^{2})}$
 
+----------------
+
 ⭐ Example 5:
 
+Time complexity is  -  $O(\sqrt{N})$
+
 ```java
-for (int i = 1; i * i <= N; i++) {   // Log  \(\sqrt{N}\) iterations
-    System.out.print(i);            // log \(\sqrt{N}\) operations
-}                                  // \(\sqrt{N}\) time complexity
-                                   // In Big O Notation ---> O(\(\sqrt{N}\));
+for (int i = 1; i * i <= N; i++) { 
+    System.out.print(i);           
+}                                  
 
 ```
 
