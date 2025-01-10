@@ -1,7 +1,8 @@
 # Agenda
 
-### Contribution Technique
-### Sliding Window
+### Contribution Technique - [ Easy ]
+### Sliding Window - [ Medium ]
+### Sliding Window Maximum - [ Hard]
 
 -----
 
