@@ -7,6 +7,24 @@
 -----------
 
 
+# Linked List Basics 
+
+Basic linked list structure would be like this:
+
+```java
+
+class Node{
+      int val;
+      Node next;
+
+      public Node(int val){
+            this.val = val;
+            next = null;
+      }
+}
+
+```
+
 # Search for element x
 
 Given a target x iterate and check if **Target** exists or not?. 
