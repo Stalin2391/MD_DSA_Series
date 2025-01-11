@@ -1,5 +1,6 @@
 # Agenda 
 ### Linked List Basics
-### Insert Node 
-### Delete Node
+### Insert / Delete of any Node 
+### Reverse the Linked List
+### Deep copy
 -----------
