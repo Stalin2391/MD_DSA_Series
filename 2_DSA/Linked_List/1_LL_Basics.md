@@ -13,7 +13,7 @@ Given a target x iterate and check if **Target** exists or not?.
 
 ```java
 
-public static search(Node head, int target){
+public static boolean search(Node head, int target){
       Node temp = head;
       while(temp != null){
           if(temp.val == target) return true;
