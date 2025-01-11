@@ -24,4 +24,7 @@ public static boolean search(Node head, int target){
 
 ```
 
+## DRY RUN:
+
+<img width="1397" alt="Search element in linked list" src="https://github.com/user-attachments/assets/ba140775-f87a-407e-903f-0d178f2d3145" />
 
