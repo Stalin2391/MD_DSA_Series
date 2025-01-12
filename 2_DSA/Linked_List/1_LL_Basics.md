@@ -85,10 +85,18 @@ Output 2:
 
 <img width="1433" alt="Delete in position" src="https://github.com/user-attachments/assets/b770b0f1-9fbf-466a-a734-4e7f8c46a17c" />
 
+If O - th Node Deleted the output would be :
+
+output : 2 -> 3 -> 4 -> 5
+
 
 ### DRY RUN: Delete the B-th Node from the linked list:
 
 <img width="1423" alt="Delete Edge case" src="https://github.com/user-attachments/assets/a39f9980-cbee-489c-94a2-4bacd19fb68e" />
+
+If B - th Node (B = 3) Deleted the output would be :
+
+output : 1 -> 2 -> 3 -> 5
 
 
 # Search for element x
