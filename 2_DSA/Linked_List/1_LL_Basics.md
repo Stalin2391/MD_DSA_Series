@@ -47,6 +47,12 @@ Output: 1 2 10
 
 ```
 
+
+## DRY RUN: 
+
+<img width="1445" alt="Beginning of a Linked List" src="https://github.com/user-attachments/assets/96e60003-bb2d-4a05-bff6-8368a49a38c3" />
+
+
 # Search for element x
 
 Given a target x iterate and check if **Target** exists or not?. 
