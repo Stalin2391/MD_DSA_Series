@@ -81,7 +81,7 @@ Output 2:
 
 ```
 
-### Edge case when B is 0 DRY RUN:
+### Edge case when B is 0 ----> DRY RUN:
 
 <img width="1433" alt="Delete in position" src="https://github.com/user-attachments/assets/b770b0f1-9fbf-466a-a734-4e7f8c46a17c" />
 
