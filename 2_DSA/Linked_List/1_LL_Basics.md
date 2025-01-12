@@ -30,6 +30,23 @@ class Node{
 
 ```
 
+#  Insert a Node at Front/Beginning of a Linked List
+
+Given a linked list, the task is to insert a new node at the beginning/start/front of the linked list.
+
+```
+Example 1:
+
+Input: LinkedList = 4->8->16->24, NewNode = 12
+Output: 12 4 8 16 24
+
+Example 2:
+
+Input: LinkedList = 2->10, NewNode = 1
+Output: 1 2 10
+
+```
+
 # Search for element x
 
 Given a target x iterate and check if **Target** exists or not?. 
