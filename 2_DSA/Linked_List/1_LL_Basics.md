@@ -83,9 +83,13 @@ Output 2:
 
 ### Edge case when B is 0 DRY RUN:
 
+<img width="1433" alt="Delete in position" src="https://github.com/user-attachments/assets/b770b0f1-9fbf-466a-a734-4e7f8c46a17c" />
+
+
+### DRY RUN: Delete the B-th Node from the linked list:
+
 <img width="1423" alt="Delete Edge case" src="https://github.com/user-attachments/assets/a39f9980-cbee-489c-94a2-4bacd19fb68e" />
 
-<img width="1433" alt="Delete in position" src="https://github.com/user-attachments/assets/b770b0f1-9fbf-466a-a734-4e7f8c46a17c" />
 
 # Search for element x
 
