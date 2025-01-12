@@ -9,6 +9,11 @@
 
 # Linked List Basics 
 
+### Linked List basic structure:
+
+<img width="1423" alt="linked list basic structure" src="https://github.com/user-attachments/assets/f7e21e8a-8fb4-4e87-960b-aa763a43bd96" />
+
+
 Basic linked list structure would be like this:
 
 ```java
