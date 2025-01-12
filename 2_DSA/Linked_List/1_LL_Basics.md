@@ -52,6 +52,40 @@ Output: 1 2 10
 
 <img width="1445" alt="Beginning of a Linked List" src="https://github.com/user-attachments/assets/96e60003-bb2d-4a05-bff6-8368a49a38c3" />
 
+#  Delete in Linked List
+
+You are given the head of a linked list A and an integer B. Delete the B-th node from the linked list.
+
+Note : Follow 0-based indexing for the node numbering.
+
+```
+
+Example Input
+
+Input 1:
+A = 1 -> 2 -> 3
+B = 1
+
+
+Input 2:
+A = 4 -> 3 -> 2 -> 1
+B = 0
+
+Example Output
+
+Output 1:
+1 -> 3
+
+Output 2:
+3 -> 2 -> 1
+
+```
+
+### Edge case when B is 0 DRY RUN:
+
+<img width="1423" alt="Delete Edge case" src="https://github.com/user-attachments/assets/a39f9980-cbee-489c-94a2-4bacd19fb68e" />
+
+<img width="1433" alt="Delete in position" src="https://github.com/user-attachments/assets/b770b0f1-9fbf-466a-a734-4e7f8c46a17c" />
 
 # Search for element x
 
