@@ -47,6 +47,17 @@ Output: 1 2 10
 
 ```
 
+### Code:
+
+```java
+
+addFirtNode(Node head, int x){
+      Node firstNode = new Node(x);
+      firstNode.next = head;
+      head = firstNode;
+}
+
+```
 
 ## DRY RUN: 
 
