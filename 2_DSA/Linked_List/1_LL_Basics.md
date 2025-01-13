@@ -206,7 +206,7 @@ Node 0 with value 2 is the only node remaining after removing node 1.
 
 ```
 
-### Code :
+### Code : (Slow and Fast Pointer) - Approach:
 
 ```java
 
@@ -231,6 +231,48 @@ public ListNode deleteMiddle(ListNode head) {
         return head;
 
 }
+
+```
+
+#### Another Approach : 
+
+```java
+
+
+public ListNode deleteMiddle(ListNode head) {
+        if (head == null || head.next == null) {  // If the list is empty or has only one node.
+            return null;
+        }
+
+        // Count the number of nodes
+        int count = 0;
+        ListNode temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+
+        // Find the middle node index
+        int middleIndex = count / 2;
+        temp = head;
+        ListNode prev = null;
+        
+        // Traverse again to the middle node and remove it
+        for (int i = 0; i < middleIndex; i++) {
+            prev = temp;
+            temp = temp.next;
+        }
+
+        // Remove the middle node by linking the previous node to the next of the middle node
+        if (prev != null) {
+            prev.next = temp.next;
+        }
+
+        return head;
+    }
+
+
+
 
 ```
 
