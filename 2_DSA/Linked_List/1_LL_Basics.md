@@ -206,7 +206,7 @@ Node 0 with value 2 is the only node remaining after removing node 1.
 
 ```
 
-### Code : (Slow and Fast Pointer) - Approach:
+### Code : (Slow and Fast Pointer) - Approach 1:
 
 ```java
 
@@ -234,7 +234,7 @@ public ListNode deleteMiddle(ListNode head) {
 
 ```
 
-#### Another Approach : 
+#### Approach 2 : 
 
 ```java
 
