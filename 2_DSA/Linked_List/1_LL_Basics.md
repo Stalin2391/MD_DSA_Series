@@ -94,6 +94,17 @@ Output 2:
 
 ### Edge case when B is 0 ----> DRY RUN:
 
+### Code:
+
+```java
+
+deleteFirstNode(Node head){
+      if(head == null) return;
+      head = head.next;
+}
+
+```
+
 <img width="1433" alt="Delete in position" src="https://github.com/user-attachments/assets/b770b0f1-9fbf-466a-a734-4e7f8c46a17c" />
 
 If O - th Node Deleted the output would be :
