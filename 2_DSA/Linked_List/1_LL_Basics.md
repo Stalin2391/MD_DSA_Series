@@ -51,7 +51,7 @@ Output: 1 2 10
 
 ```java
 
-addFirtNode(Node head, int x){
+addFirstNode(Node head, int x){
       Node firstNode = new Node(x);
       firstNode.next = head;
       head = firstNode;
@@ -78,6 +78,24 @@ Example 2:
 
 Input: LinkedList = 2->10, NewNode = 15
 Output: 2 10 15
+
+```
+
+## Code :
+
+```java
+
+addLastNode(Node head int x){
+      if(head == null) return null;
+      if(head.next == null) return null;
+      Node temp = head;
+      while(temp != null){
+            temp = temp.next;
+      }
+      Node lastNode = new Node(x);
+      temp.next = lastNode;
+      return head;
+}
 
 ```
 
