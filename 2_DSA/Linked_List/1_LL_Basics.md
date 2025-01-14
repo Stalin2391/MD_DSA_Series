@@ -89,7 +89,7 @@ addLastNode(Node head int x){
       if(head == null) return null;
       if(head.next == null) return null;
       Node temp = head;
-      while(temp != null){
+      while(temp.next != null){
             temp = temp.next;
       }
       Node lastNode = new Node(x);
