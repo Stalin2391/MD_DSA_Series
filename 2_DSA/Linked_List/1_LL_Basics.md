@@ -63,6 +63,24 @@ addFirtNode(Node head, int x){
 
 <img width="1445" alt="Beginning of a Linked List" src="https://github.com/user-attachments/assets/96e60003-bb2d-4a05-bff6-8368a49a38c3" />
 
+
+##  Insert a Node at Last of a Linked List :
+
+Given a linked list, the task is to insert a new node at the Last of the linked list.
+
+```
+Example 1:
+
+Input: LinkedList = 4->8->16->24, NewNode = 30
+Output: 4 8 16 24 30
+
+Example 2:
+
+Input: LinkedList = 2->10, NewNode = 15
+Output: 2 10 15
+
+```
+
 #  Delete in Linked List
 
 You are given the head of a linked list A and an integer B. Delete the B-th node from the linked list.
