@@ -346,12 +346,13 @@ Explanation: There is no cycle in the linked list.
 
 **Floyd’s Tortoise and Hare Algorithm**
 
-Steps to follow floyd's tortoise algorithm:
-    - Initialize two pointers, slow and fast, both starting at the **head** of the linked list.
-    - Move **slow** by one step and **fast** by two steps in each iteration.
-    - If there is no cycle, fast will eventually reach the end of the list (fast == NULL || fast.next == NULL).
-    - If there is a cycle, slow and fast will meet at some point (since fast will eventually catch up to slow due to the cycle).
-    - If the pointers meet, a cycle is detected. If fast reaches the end of the list, no cycle exists.
+Steps to follow Floyd's Tortoise algorithm:
+- Initialize two pointers, slow and fast, both starting at the head of the linked list.
+- Move slow by one step and fast by two steps in each iteration.
+- If there is no cycle, fast will eventually reach the end of the list (`fast == NULL || fast.next == NULL`).
+- If there is a cycle, slow and fast will meet at some point (since fast will eventually catch up to slow due to the cycle).
+- If the pointers meet, a cycle is detected. If fast reaches the end of the list, no cycle exists.
+
 
 ```java
 
