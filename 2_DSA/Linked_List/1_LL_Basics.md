@@ -328,6 +328,27 @@ Output: [1,2,3
 
 ```
 
+### Code :
+
+```java
+
+public ListNode deleteDuplicates(ListNode head) {
+    if(head == null) return head;
+
+    ListNode current = head;
+
+    while(current != null && current.next != null) {
+        if(current.val = current.next.value) {
+            current.next = current.next.next;
+        }else {
+            current = current.next;
+        }
+    }
+    return head;
+}
+
+```
+
 # Linked List Cycle
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
