@@ -340,9 +340,46 @@ Output: false
 Explanation: There is no cycle in the linked list.
 
 ```
+## Brute Force Idea :
+
+Brute Force Idea for Cycle Detection in a Linked List:
+
+- Start with the head of the linked list.
+- Traverse through each node and store the addresses of visited nodes in a set or array.
+- For each node, check if its address has already been encountered.
+  - If it has, a cycle exists (because we’ve revisited a node).
+  - If it hasn’t, continue traversing to the next node.
+- If the traversal ends and no node was revisited, there is no cycle.
+
+```java
+
+public boolean hasCycle(ListNode head) {
+
+    if(head == null || head.next == null) return false;
+
+    HashSet<Integer> set = new HashSet<>();
+
+    ListNode current = head;
+
+    while(current != null){
+
+        if(set.contains(current)) return true;
+        set.add(current);
+        current = current.next;
+
+    }
+
+    return false;
+
+}
 
 
-### Optimized Approach :
+```
+
+
+
+
+## Optimized Idea :
 
 **Floyd’s Tortoise and Hare Algorithm**
 
@@ -373,6 +410,8 @@ public boolean hasCycle(ListNode head) {
 }
 
 ```
+
+
 
 
 # Search for element x
