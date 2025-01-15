@@ -412,9 +412,6 @@ public boolean hasCycle(ListNode head) {
 
 ```
 
-
-
-
 ## Optimized Idea :
 
 **Floyd’s Tortoise and Hare Algorithm**
