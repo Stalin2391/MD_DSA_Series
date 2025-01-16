@@ -468,6 +468,28 @@ Output: []
 
 **Follow up:** A linked list can be reversed either iteratively or recursively. Could you implement both?
 
+
+```java
+
+public ListNode reverseList(ListNode head) {
+    if(head == null) return null;
+    if(head.next == null) return head;
+
+    ListNode prev = null;
+    ListNode current = head;
+
+    while(current != null){
+        ListNode nextNode = current.next;
+        current.next = prev;
+        prev = current;
+        current = nextNode;
+    }
+
+    return prev;
+}
+
+```
+
 # Search for element x
 
 Given a target x iterate and check if **Target** exists or not?. 
