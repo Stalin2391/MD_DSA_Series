@@ -25,3 +25,54 @@ A **class** is a blueprint or template for creating objects. It defines the stru
 
 **Example:**
 A "Car" class might define the properties and methods that all car objects will have.
+
+### Example :
+
+```java
+
+class Person {
+    String name;
+    int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getter and Setter methods for encapsulation
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Display information about the person
+    public void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person("John", 30);
+        p.display();
+        
+        // Using setter to modify data
+        p.setAge(31);
+        p.display();
+    }
+}
+
+
+```
