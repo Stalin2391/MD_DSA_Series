@@ -494,6 +494,26 @@ public ListNode reverseList(ListNode head) {
 
 Given a target x iterate and check if **Target** exists or not?. 
 
+
+
+
+## Approach 1:
+
+
+```java
+
+public static boolean isTargetExist(int[] arr, int target) {
+    int N = arr.length;
+
+    for(int i = 0; i < N; i++){
+        if(arr[i] == target) return true;
+    }
+    return false;
+}
+
+
+```
+
 ```java
 
 public static boolean search(Node head, int target){
